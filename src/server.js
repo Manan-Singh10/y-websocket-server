@@ -6,7 +6,7 @@ import * as number from 'lib0/number'
 import { setupWSConnection } from './utils.js'
 
 const wss = new WebSocket.Server({ noServer: true })
-const host = process.env.HOST || ''0.0.0.0''
+const host = process.env.HOST || '0.0.0.0'
 const port = number.parseInt(process.env.PORT || '1234')
 
 const server = http.createServer((_request, response) => {
